@@ -12,21 +12,7 @@ app.controller('product', function ($scope, $routeParams, $localStorage) {
         console.log($scope.price);
         $scope.show_price = true;
     }
-    if ($localStorage.local_data1 == undefined) //Save datacart when reload website
-    {
-        $scope.datacart = [];
-        $scope.sum = 0;
-        console.log("first_load");
-    }
-    else {
-        console.log("no_first");
-        $scope.datacart = $localStorage.local_data1;
-        $scope.sum = $localStorage.sum1;
-        if ($scope.sum == 0)
-            $scope.show_cart = false;
-        else
-            $scope.show_cart = true;
-    }
+
     $scope.add_cart = function (index, number) {
         console.log("Index in datalist: " + index);
         // lọc sản phẩm mới thêm vào đã có sẵn trong datacart hay k?

@@ -73,7 +73,21 @@ app.controller('myctr', function ($scope, $http, $localStorage, $location) {
         console.log($scope.sum)
     }
     /*--->End cart.html <----*/
-
+    if ($localStorage.local_data1 == undefined) //Save datacart when reload website
+    {
+        $scope.datacart = [];
+        $scope.sum = 0;
+        console.log("first_load");
+    }
+    else {
+        console.log("no_first");
+        $scope.datacart = $localStorage.local_data1;
+        $scope.sum = $localStorage.sum1;
+        if ($scope.sum == 0)
+            $scope.show_cart = false;
+        else
+            $scope.show_cart = true;
+    }
     /*---> About-us.html <----*/
     $scope.menu_ab = function (ab) {
         $scope.ab = ab;
