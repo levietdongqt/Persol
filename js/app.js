@@ -16,7 +16,7 @@ app.config(function ($routeProvider) {
         .otherwise({ redirectTo: "/" });
 
 });
-app.controller('myctr', function ($scope, $http, $localStorage, $location) {
+app.controller('myctr', function ($scope, $http, $localStorage, $location, $route) {
 
     $http.get('json/data-main.json')
         .then(function (response) {
@@ -87,6 +87,15 @@ app.controller('myctr', function ($scope, $http, $localStorage, $location) {
             $scope.show_cart = false;
         else
             $scope.show_cart = true;
+    }
+    $scope.click_search=function(){
+        $route.reload ();
+        $localStorage.search=$scope.search;
+        
+    }
+    $scope.reset_search=function(){
+        $localStorage.search="";
+        $scope.search="";
     }
     /*---> About-us.html <----*/
     $scope.menu_ab = function (ab) {
