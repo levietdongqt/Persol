@@ -72,7 +72,7 @@
                     <div class="input-group srch">
                         <input type="text" class="form-control  " placeholder="What glasses do you need? " value=""
                             ng-model="search" required />
-                        <a href="#!list/search" >
+                        <a href="#!list/Search" ng-click='click_search()' >
                             <div class="input-group-append">
                                 <button class="btn btn-outline-secondary" type="button"><i
                                         class="fa-duotone fa-magnifying-glass"></i></button>
@@ -161,7 +161,8 @@
 
                 <ul class="dropdown-menu">
                     <li ng-repeat="x in databrand">
-                        <a class="dropdown-item" href="#!list/{{x.Name}}" title=" RayBan" 
+                        <a class="dropdown-item" href="#!list/{{x.Name}}" title=" RayBan"
+                        ng-click="reset_search()" 
                             ng-class="{active_menu: activePath=='/list/{{x.Name}}'}">
                             {{x.Name}}</a>
                     </li>
@@ -170,21 +171,24 @@
             <div class="col-lg-9 col-md-9 col-sm-9  col-9 xmenu ">
 
                 <a href="#!list/SunGlasses" style=" display:inline-block;  text-decoration: none" class="menu-ngang " ;
-                    ng-class="{ active_menu: activePath=='/list/SunGlasses' }">
+                ng-click="reset_search()"    
+                ng-class="{ active_menu: activePath=='/list/SunGlasses' }">
                     <div class=" home-menu-ngang">
                         <img class="" src="img/sun21.jpg" style="width: 2.5rem; height: auto;">
                         <span style="font-size: 1rem;letter-spacing: 0.1rem; ">Sunglasses</span>
                     </div>
                 </a>
                 <a href="#!list/Glasses" style=" display: inline-block;  text-decoration: none" class="menu-ngang" ;
-                    ng-class="{ active_menu: activePath=='/list/Glasses' }">
+                ng-click="reset_search()"    
+                ng-class="{ active_menu: activePath=='/list/Glasses' }">
                     <div class=" home-menu-ngang">
                         <img src="img/rayban11.jpg" style="width: 3rem; height: auto;">
                         <span style="font-size: 1rem;letter-spacing: 0.1rem">Glasses</span>
                     </div>
                 </a>
                 <a href="#!list/Contact-lens" style=" display: inline-block;  text-decoration: none" class="menu-ngang" ;
-                    ng-class="{ active_menu: activePath=='/list/Contact-Lens' }">
+                ng-click="reset_search()"    
+                ng-class="{ active_menu: activePath=='/list/Contact-Lens' }">
                     <div class=" home-menu-ngang">
                         <img src="img/img6.jpg" style=" width: 1.5rem; height: auto;">
                         <span style="font-size: 1rem;letter-spacing: 0.1rem ">Contact Lens</span>
