@@ -7,14 +7,13 @@ app.controller('listProduct', function ($scope, $routeParams, $localStorage, $fi
         console.log("click search")
     }
     else  // This mean: user click on menu
-    {
-        
+    {      
         $scope.search = "";
         $scope.show_banner = true;
         console.log("no search")
     }
     console.log($scope.search)
-    $localStorage.show_banner = $scope.show_banner;
+    // $localStorage.show_banner = $scope.show_banner;
     $scope.filtered = $filter('filter')($scope.datalist, info, true); //absolute filter in datalist
     $scope.filtered1 = $filter('filter')($scope.filtered, $scope.search);  //filter tương đối cho ô tìm kiếm
     $localStorage.filtered1 = $scope.filtered1;
@@ -23,11 +22,9 @@ app.controller('listProduct', function ($scope, $routeParams, $localStorage, $fi
     }
     else
         $scope.noResult = false;
-        $scope.load = info;   //use to show key-word in listproduct.html
-    console.log($scope.load)
-   
-    $localStorage.load = info;
-    $scope.show_Search = $scope.search;    //Use to show key-word search in listproduct.html
+        $scope.load = info;   //use to show key-word and filter for banner in listproduct.html
+        // $localStorage.load = info;
+        $scope.show_Search = $scope.search;    //Use to show key-word search in listproduct.html
     //call  funtion for pagination 
     $scope.pagination_list(1);
 })
