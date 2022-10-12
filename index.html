@@ -60,7 +60,7 @@
 
                 <!-- LOGO -->
                 <div class="col-lg-3 col-md-3 col-3 ">
-                    <div class="logo">
+                    <div class="logo"  ng-click="reset_search()">
                         <a href="#!" title="Genuine Glasses">
                             <img src="img/LOGO/LOGO.PNG" alt="Genuine Radius In Ho Chi Minh City" width="90%"
                                 class="imga">
@@ -74,7 +74,7 @@
                             ng-model="search" required />
                         <a href="#!list/Search" ng-click='click_search()' >
                             <div class="input-group-append">
-                                <button class="btn btn-outline-secondary" type="button"><i
+                                <button class="btn btn-outline-secondary" type="button" ng-l><i
                                         class="fa-duotone fa-magnifying-glass"></i></button>
                             </div>
                         </a>
@@ -83,7 +83,7 @@
 
                 <div class="col-lg-4 col-md-4 col-4 cartiabout">
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-4"  ng-click="reset_search()">
                             <div class="input-group">
                                 <a href="#!contact" title="Account" rel="nofollow" class="login l2">
                                     <span>
@@ -100,7 +100,7 @@
                             </div>
                         </div>
                         <div class="col-4">
-                            <div class="input-group">
+                            <div class="input-group"  ng-click="reset_search()">
                                 <a href="#!about" title="Account" rel="nofollow" class="login l2" ng-click="menu_ab('about-us')">
                                     <span>
 
@@ -115,7 +115,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-2">
+                        <div class="col-2"  ng-click="reset_search()">
                             <div class="minicart" ng-click="show_cart1()">
                                 <a href="#!cart" title="Cart" rel="nofollow" class="gio">
                                     <span>
@@ -145,7 +145,7 @@
 
 
         <div class="row xyz fixmenu2">
-            <div class="col-lg-1 col-md-1 col-sm-1 col-1 ">
+            <div class="col-lg-1 col-md-1 col-sm-1 col-1 "  ng-click="reset_search()">
                 <a href="#!">
                     <div style="padding-top: 30% ; text-align: right; font-size: 1.5rem; color: red;">
                         <i class="fa-regular fa-house"></i>
@@ -195,7 +195,8 @@
                     </div>
                 </a>
                 <a href="#!compare" style=" display: inline-block;  text-decoration: none;" class="menu-ngang" ;
-                    ng-class="{ active_menu: activePath=='/compare' }">
+                    ng-class="{ active_menu: activePath=='/compare' }"
+                    ng-click="reset_search()">
                     <div class=" home-menu-ngang">
                         <img src="img/LOGO/compare.jpg" style=" width: 3rem; height: auto;">
                         <span style="font-size: 1rem;letter-spacing: 0.1rem ">Compare</span>
@@ -203,8 +204,6 @@
                 </a>
             </div>
         </div>
-
-
         <!--Ng ng view-->
         <div ng-view style="margin-bottom:5%;margin-top:5%">
         </div>
