@@ -19,7 +19,7 @@ eProject documentation at:
 
 ============================
 
-eProject published at: 
+eProject published at: https://levietdongqt.github.io/Persol/#!/
 
 ============================
 
