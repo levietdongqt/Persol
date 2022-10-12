@@ -89,11 +89,9 @@ app.controller('myctr', function ($scope, $http, $localStorage, $location, $rout
             $scope.show_cart = true;
     }
     $scope.click_search=function(){
-        $route.reload ();
-        $localStorage.search=$scope.search;        
+        $route.reload ();        
     }
     $scope.reset_search=function(){    //click on menu
-        $localStorage.search="";
         $scope.search="";
     }
     /*---> About-us.html <----*/
