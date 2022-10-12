@@ -1,7 +1,7 @@
 app.controller('product', function ($scope, $routeParams, $localStorage) {
     var ID_Product = parseInt($routeParams.id);
     $scope.index = $scope.datalist.findIndex(item => item.Img.ID === ID_Product);
-
+console.log(ID_Product)
     $scope.img = $scope.datalist[$scope.index].Img.Src.img2; //get big image on first load in product.html
     $scope.small_img = function (img) {     //get big image when click on small image
         $scope.img = img;
