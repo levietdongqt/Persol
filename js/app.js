@@ -90,10 +90,9 @@ app.controller('myctr', function ($scope, $http, $localStorage, $location, $rout
     }
     $scope.click_search=function(){
         $route.reload ();
-        $localStorage.search=$scope.search;
-        
+        $localStorage.search=$scope.search;        
     }
-    $scope.reset_search=function(){
+    $scope.reset_search=function(){    //click on menu
         $localStorage.search="";
         $scope.search="";
     }

@@ -1,7 +1,7 @@
 app.controller('listProduct', function ($scope, $routeParams, $localStorage, $filter) {
     var info = $routeParams.keyWord;
-    $scope.search= $localStorage.search;
     console.log( $scope.search)
+    
     if (info == 'Search')  // This mean: user click on search
     {
         info = undefined;   //info is undefined then the absolute filter returns the same value as the original array
@@ -10,6 +10,7 @@ app.controller('listProduct', function ($scope, $routeParams, $localStorage, $fi
     }
     else  // This mean: user click on menu
     {
+        
         $scope.search = "";
         $localStorage.search="";
         $scope.show_banner = true;
