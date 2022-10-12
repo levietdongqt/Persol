@@ -15,7 +15,7 @@ Group members Name Student ID
  
 ============================
 
-eProject documentation at: 
+eProject documentation at: https://github.com/levietdongqt/Persol/tree/main/Review
 
 ============================
 
@@ -23,7 +23,7 @@ eProject published at: https://levietdongqt.github.io/Persol/#!/
 
 ============================
 
-eProject video published at
+eProject video published at: https://youtu.be/1YiRSKc4IsM
 
 ============================
 
