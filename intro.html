@@ -35,7 +35,7 @@
         <div ng-repeat="x in datalist | filter: 'TRENDING' " class="trend">
           <ul ng-click="big_img(x.Img.Src.img2)">
             <li ng-click="get_index(x.Img.ID)">
-              <a href="#!product/{{x.Img.ID}}"><img ng-src="{{x.Img.Src.img2}}"  alt="" class="imgtrending"  >
+              <a href="#!product/{{x.Img.ID}}#img"><img ng-src="{{x.Img.Src.img2}}"  alt="" class="imgtrending"  >
               <p> <b>{{x.Img.Brand.Name}} </b> <br> {{x.Img.Color}}{{x.Img.ID}}</p>
               </a>
             </li>
