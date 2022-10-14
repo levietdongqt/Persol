@@ -23,7 +23,7 @@ eProject published at: https://levietdongqt.github.io/Persol/#!/
 
 ============================
 
-eProject video published at: https://youtu.be/1YiRSKc4IsM
+eProject video published at: https://www.youtube.com/watch?v=hKLdX05TzNQ
 
 ============================
 
