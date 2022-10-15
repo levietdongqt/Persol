@@ -46,6 +46,7 @@
     <script src="js/cart.js"></script>
     <script src="js/compare.js"></script>
     <script src="js/list-product.js"></script>
+    <script src="js/about.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 
@@ -101,7 +102,7 @@
                         </div>
                         <div class="col-4">
                             <div class="input-group"  ng-click="reset_search()">
-                                <a href="#!about" title="Account" rel="nofollow" class="login l2" ng-click="menu_ab('about-us')">
+                                <a href="#!about/about-us" title="Account" rel="nofollow" class="login l2" ng-click="menu_ab('about-us')">
                                     <span>
 
                                         <button class="login" type="button"><i class="fa-duotone fa-user-secret "
@@ -118,9 +119,9 @@
                         <div class="col-2"  ng-click="reset_search()">
                             <div class="minicart" ng-click="show_cart1()">
                                 <a href="#!cart" title="Cart" rel="nofollow" class="gio">
-                                    <span>
+                                    <span>                                        
                                         <button class="login" type="button"> <i class="fa-solid fa-cart-minus"
-                                                aria-hidden="true"> {{datacart.length}} </i></button>
+                                                aria-hidden="true">  </i>  <span class="number_item">{{datacart.length}}</span> </button>
                                     </span>
                                 </a>
                             </div>
@@ -343,11 +344,11 @@
                                         href="index.html#!/contact#contact" rel="nofollow" 
                                         ng-class="{ active_menu: activePath=='/contact' }">Contact</a></li>
                                     <li ng-click="menu_ab('Payments')"><a class="footer-item" 
-                                        href="index.html#!/about#Payments" rel="nofollow"
-                                        ng-class="{ active_menu: show_Payments==true && activePath=='/about'}">Payments</a></li>
+                                        href="index.html#!/about/Payments#Payments" rel="nofollow"
+                                        ng-class="{ active_menu: activePath=='/about/Payments'}">Payments</a></li>
                                     <li  ng-click="menu_ab('GUARANTEE')"><a class="footer-item" 
-                                        href="index.html#!/about#GUARANTEE" rel="nofollow"
-                                        ng-class="{ active_menu: show_GUARANTEE==true && activePath=='/about'}">Terms of warranty - exchange &
+                                        href="index.html#!/about/GUARANTEE#GUARANTEE" rel="nofollow"
+                                        ng-class="{ active_menu: activePath=='/about/GUARANTEE'}">Terms of warranty - exchange &
                                             return</a></li>
 
                                 </ul>
@@ -358,11 +359,11 @@
                                 <div class="footer-h2">INFORMATION</div>
                                 <ul class="home_ul">
                                     <li ng-click="menu_ab('Policy')"><a class="footer-item" 
-                                        href="index.html#!/about#Policy" rel="nofollow"
-                                        ng-class="{ active_menu: show_Policy==true && activePath=='/about'}">Privacy Policy</a></li>
+                                        href="index.html#!/about/Policy#Policy" rel="nofollow"
+                                        ng-class="{ active_menu:  activePath=='/about/Policy'}">Privacy Policy {{show_Policy}}</a></li>
                                     <li ng-click="menu_ab('Terms')"><a class="footer-item" 
-                                        href="index.html#!/about#Terms" rel="nofollow"
-                                        ng-class="{ active_menu: show_Terms==true && activePath=='/about'}">Usage Agreement</a></li>
+                                        href="index.html#!/about/Terms#Terms" rel="nofollow"
+                                        ng-class="{ active_menu:  activePath=='/about/Terms'}">Usage Agreement</a></li>
                                 </ul>
                             </div>
                         </div>
