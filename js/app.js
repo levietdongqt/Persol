@@ -94,33 +94,6 @@ app.controller('myctr', function ($scope, $http, $localStorage, $location, $rout
     $scope.reset_search=function(){    //click on menu
         $scope.search="";
     }
-    /*---> About-us.html <----*/
-    // $scope.menu_ab = function (ab) {
-    //     $scope.ab = ab;
-    //     $scope.show_about = false;
-    //     $scope.show_Policy = false;
-    //     $scope.show_Terms = false;
-    //     $scope.show_GUARANTEE = false;
-    //     $scope.show_Payments = false;
-    //     if (ab == "about-us")
-    //         $scope.show_about = true;
-    //     if (ab == "Policy")
-    //         $scope.show_Policy = true;
-    //     if (ab == "Terms")
-    //         $scope.show_Terms = true;
-    //     if (ab == "GUARANTEE")
-    //         $scope.show_GUARANTEE = true;
-    //     if (ab == "Payments")
-    //         $scope.show_Payments = true;
-    //         console.log( $scope.show_about)
-    //         console.log( $scope.show_Policy)
-    //         console.log($scope.show_Terms)
-    //         console.log($scope.show_GUARANTEE)
-    //         console.log($scope.show_Payments)
-    //         console.log("có chạy")
-    // }
-    /*--->  <----*/
-
 });
 
 
