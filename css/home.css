@@ -542,3 +542,7 @@ i.snip1562.hover {
   list-style-type: none;
   text-align: left;
 }
+.number_item{
+  font-size: 0.9em;
+ padding-bottom: 60%;
+}
