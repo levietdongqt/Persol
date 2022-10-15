@@ -27,7 +27,7 @@
                                 <!-- <span class="cart_text1">Quantity: </span> <span class="cart_text2">  {{x.Quantity}} </span> -->
                                 <input type="number" name="" id="" ng-model="x.Quantity" ng-change="change_price($index)" class="cart-quati">
                                 <br>
-                                <span class="cart_text1">Price:  </span > <span class="cart_text2">  {{x.Total}} USD</span>
+                                <span class="cart_text1">Price:  </span > <span class="cart_text2">  ${{x.Total}}</span>
                                 <br>
                             <button  class="cart_delete"  ng-click="deleteRow($index)">Delete</button>
                             </div>
@@ -37,7 +37,7 @@
                        </span> 
                 </div>
                 <hr>
-                <span class="cart_text1 "> Order Total: </span> <span class="cart_text2">  {{sum}} USD
+                <span class="cart_text1 "> Order Total: </span> <span class="cart_text2">  ${{sum}} 
                     <hr>
                 <input class="cart_delete" style="margin-left: 35%;" type="button" value="Delete Cart" ng-click="deleteCart()">
                 <!-- method="post" -->
